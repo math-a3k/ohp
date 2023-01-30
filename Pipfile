@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "~=4.1"
+django-environ = "*"
+pytest-django = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[dev-packages]
+pre-commit = "*"
+isort = "*"
+black = "*"
+pycln = "*"
+sphinx = "*"
+
+[requires]
+python_version = "3.10"
