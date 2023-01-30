@@ -1,2 +1,0 @@
-# ohp
-Open Health Platform
