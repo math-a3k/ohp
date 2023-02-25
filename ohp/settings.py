@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     #
     "base",
+    "units",
     #
     "bootstrap5",
 ]
@@ -134,3 +135,11 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+UCUM_UNITS_URL = env.str(
+    "OHP_UCUM_UNITS_URL",
+    (
+        "https://raw.githubusercontent.com/"
+        "ucum-org/ucum/main/ucum-essence.xml"
+    ),
+)
