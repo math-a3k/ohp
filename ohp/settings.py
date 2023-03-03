@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     #
     "base",
     "units",
+    "loinc",
     #
     "bootstrap5",
 ]
@@ -143,3 +144,5 @@ UCUM_UNITS_URL = env.str(
         "ucum-org/ucum/main/ucum-essence.xml"
     ),
 )
+
+LOINC_ZIP_FILE = env.str("OHP_LOINC_ZIP_FILE", "/share/Loinc_2.73_ohp.zip")
