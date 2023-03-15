@@ -46,6 +46,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     #
     "base",
+    "units",
+    "loinc",
+    #
+    "bootstrap5",
 ]
 
 MIDDLEWARE = [
@@ -132,3 +136,13 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+UCUM_UNITS_URL = env.str(
+    "OHP_UCUM_UNITS_URL",
+    (
+        "https://raw.githubusercontent.com/"
+        "ucum-org/ucum/main/ucum-essence.xml"
+    ),
+)
+
+LOINC_ZIP_FILE = env.str("OHP_LOINC_ZIP_FILE", "/share/Loinc_2.73_ohp.zip")

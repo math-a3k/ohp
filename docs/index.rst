@@ -10,6 +10,9 @@ Welcome to ohp's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   units
+   loinc
+
 ohp - Open Healthcare Platform - is a Free and Open Source Software for Electronic Health Records and Hospital Operations Management.
 
 Indices and tables

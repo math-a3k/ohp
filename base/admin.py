@@ -11,7 +11,6 @@ class OHPUserChangeForm(UserChangeForm):
 
 
 class OHPUserAdmin(UserAdmin):
-
     form = OHPUserChangeForm
     list_display = (
         "user_type",

@@ -1,0 +1,18 @@
+{% extends "base/base.html" %}
+
+{% load bootstrap5 i18n %}
+
+{% block title %}
+	{% translate "Home" %}
+{% endblock title %}
+
+{% block content %}
+	<div class="container">
+		<div class="p-3 bg-info bg-opacity-10 border border-info rounded-end">
+		{% blocktranslate %}
+		    ohp - Open Healthcare Platform - is a Free and Open Source Software for Electronic Health Records and Hospital Operations Management.
+		{% endblocktranslate %}
+	</div>
+
+	</div>
+{% endblock content %}
